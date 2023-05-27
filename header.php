@@ -34,5 +34,12 @@
                     </ul>
                 </nav>
             </div>
+            <div class="row menus">
+                <nav>
+                    <ul>
+                    <?php echo strip_tags(wp_nav_menu( array('theme_location' => 'second-menu','container'=> false,'items_wrap' => '%3$s','echo'=>false,'before'=>'<li>','after'=>'</li>')),'<ul><li><a>'); ?>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
